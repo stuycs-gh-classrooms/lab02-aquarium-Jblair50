@@ -2,9 +2,9 @@
 # Aquarium Lab
 #### Name:
 #### TableBuddies+™
-- TB+ 0:
-- TB+ 1:
-- TB+ 2:
+- TB+ 0: Demir Dupljak
+- TB+ 1: Dylan Chen
+- TB+ 2: Nicolai Selector
 
 ---
 ### Instructions
