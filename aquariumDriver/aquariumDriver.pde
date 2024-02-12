@@ -17,10 +17,10 @@ void setup() {
 
 void draw() {
   background(150);
-  t.moveAnimals();
+  //t.moveAnimals();
   t.display();
 }
 
 void mouseClicked() {
-  t.addAnimal(mouseX, mouseY);
+  //t.addAnimal(mouseX, mouseY);
 }

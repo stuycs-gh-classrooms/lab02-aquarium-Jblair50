@@ -5,10 +5,26 @@ class Tank {
   int tWidth;
   int floorHeight;
 
-  Tank(int x, int y, int h, int w, int fH) {
+  Tank(int x, int y, int w, int h, int fH) {
     tankX = x;
     tankY = y;
-    tankHeight
+    tHeight = h;
+    tWidth = w;
+    floorHeight = fH;
+  }
+  
+  void display() {
+    fill(35, 137, 218);
+    rect(tankX, tankY, tWidth, tHeight);
+    fill(236, 204, 162);
+    rect(tankX, (tankY + tHeight)-floorHeight, tWidth, floorHeight);
   }
 
+  void addAnimal(int x, int y) {
+    
+  }
+
+  void moveAnimals() {
+    
+  }
 }
