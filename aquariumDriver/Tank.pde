@@ -4,6 +4,7 @@ class Tank {
   int tHeight;
   int tWidth;
   int floorHeight;
+  ArrayList<Animal> Animals = new ArrayList<Animal>();
 
   Tank(int x, int y, int w, int h, int fH) {
     tankX = x;
@@ -21,10 +22,18 @@ class Tank {
   }
 
   void addAnimal(int x, int y) {
-    
+    Animals.add(new Animal(x, y, 30));
   }
-
+  
+  void displayAnimals() {
+    for(Animal a: Animals) {
+      a.display();
+    }
+  }
+  
   void moveAnimals() {
-    
+    for(Animal a: Animals) {
+      a.move();
+    }
   }
 }

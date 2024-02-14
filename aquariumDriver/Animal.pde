@@ -2,8 +2,8 @@ class Animal {
   int ax;
   int ay;
   int aSize;
-  int xSpeed;
-  int ySpeed;
+  int xSpeed = int(random(2));
+  int ySpeed = int(random(2));
   
   Animal(int x, int y, int as) {
     ax = x;
@@ -16,6 +16,12 @@ class Animal {
   }
   
   void move() {
+    if (xSpeed == 0) {
+      xSpeed = -1;
+    }
+    if (ySpeed == 0) {
+      ySpeed = -1;
+    }
     ax += xSpeed;
     ay += ySpeed;
     if(ax <= 0 || ax >= width) {
